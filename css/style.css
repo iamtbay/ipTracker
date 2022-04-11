@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  background-image: url("../images/pattern-bg.png");
+  background-size: cover;
+}
+
+#map {
+  height: 50vh;
+  width: 75%;
+  margin: auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 3% 5%;
+}
+
+.container .title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.container .searchContainer {
+  margin: auto;
+  width: 80%;
+  word-spacing: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 6vh;
+}
+
+.container .searchContainer #ipText {
+  padding: 2% 10% 2% 5%;
+  border: none;
+  outline: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container .searchContainer #searchButton {
+  border: none;
+  outline: none;
+  padding: 7%;
+  background-color: #000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 2 5%;
+}
+
+.container .searchContainer #searchButton img {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .infoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  color: #2b2b2b;
+  border-radius: 10px;
+  width: 65%;
+  margin: 2% auto;
+  padding: 3% 5%;
+}
+
+.container .infoBox .subTitle {
+  font-size: 0.4rem;
+  letter-spacing: 1.5px;
+  color: #969696;
+  font-weight: 700;
+  margin-top: 10%;
+}
+
+.container .infoBox .informations {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 3% 5%;
+  }
+  .container .title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .container .searchContainer {
+    margin: auto;
+    width: 40%;
+    word-spacing: -5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 6vh;
+  }
+  .container .searchContainer #ipText {
+    padding: 2% 10% 2% 5%;
+    border: none;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .container .searchContainer #searchButton {
+    border: none;
+    outline: none;
+    padding: 4%;
+    background-color: #000;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 2 5%;
+    cursor: pointer;
+  }
+  .container .searchContainer #searchButton img {
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .container .infoBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #fff;
+    color: #2b2b2b;
+    border-radius: 10px;
+    width: 65%;
+    margin: 2% auto;
+    padding: 3% 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .infoBox .infCard {
+    padding: 1%;
+    border-left: 1px solid #969696;
+    text-align: left;
+  }
+  .container .infoBox .subTitle {
+    font-size: 0.4rem;
+    letter-spacing: 1.5px;
+    color: #969696;
+    font-weight: 700;
+  }
+  .container .infoBox .informations {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 150%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

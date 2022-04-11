@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap')
+$vDgray: hsl(0, 0%, 17%)
+$dGray: hsl(0, 0%, 59%)
+$fontFam: 'Rubik', sans-serif
+*
+    padding: 0
+    margin: 0
+    overflow: hidden
+body
+    font-size: 18px
+    font-family: $fontFam
+    background-image: url("../images/pattern-bg.png")
+    background-size: cover
+#map
+    height: 50vh
+    width: 75%
+    margin: auto
+.container
+    width: 90%
+    margin: auto
+    text-align: center
+    padding: 3% 5%
+    .title
+        color: #fff
+        font-weight: 500
+        font-size: 1.5rem
+    .searchContainer
+        margin: auto
+        width: 80%
+        word-spacing: -5px
+        display: flex
+        align-items: stretch
+        justify-content: center
+        height: 6vh
+        #ipText
+            padding: 2% 10% 2% 5%
+            border: none
+            outline: none
+            border-top-left-radius: 10px
+            border-bottom-left-radius: 10px     
+        #searchButton
+            border: none
+            outline: none
+            padding: 7%
+            background-color: #000
+            border-top-right-radius: 10px
+            border-bottom-right-radius: 10px
+            margin-right: 2 5%
+            img
+               width: 100%
+               align-self: center
+    .infoBox
+        display: flex
+        flex-direction: column
+        background-color: #fff
+        color: $vDgray
+        border-radius: 10px
+        width: 65%
+        margin: 2% auto
+        padding: 3% 5%
+        .subTitle
+            font-size: 0.4rem
+            letter-spacing: 1.5px
+            color: $dGray
+            font-weight: 700
+            margin-top: 10%
+        .informations
+            font-weight: 500
+            font-size: 1rem
+            line-height: 150%
+@media screen and (min-width:500px)
+    .container
+        width: 90%
+        margin: auto
+        text-align: center
+        padding: 3% 5%
+        .title
+            color: #fff
+            font-weight: 500
+            font-size: 1.5rem
+        .searchContainer
+            margin: auto
+            width: 40%
+            word-spacing: -5px
+            display: flex
+            align-items: stretch
+            justify-content: center
+            height: 6vh
+            #ipText
+                padding: 2% 10% 2% 5%
+                border: none
+                outline: none
+                border-top-left-radius: 10px
+                border-bottom-left-radius: 10px
+            #searchButton
+                border: none
+                outline: none
+                padding: 4%
+                background-color: #000
+                border-top-right-radius: 10px
+                border-bottom-right-radius: 10px
+                margin-right: 2 5%
+                cursor: pointer
+                img
+                    width: 100%
+                    align-self: center
+        .infoBox
+            display: flex
+            flex-direction: row
+            background-color: #fff
+            color: $vDgray
+            border-radius: 10px
+            width: 65%
+            margin: 2% auto
+            padding: 3% 5%
+            justify-content: space-between
+            .infCard
+                padding: 1%
+                border-left: 1px solid $dGray
+                text-align: left
+            .subTitle
+                font-size: 0.4rem
+                letter-spacing: 1.5px
+                color: $dGray
+                font-weight: 700
+            .informations
+                font-weight: 500
+                font-size: 1rem
+                line-height: 150%
